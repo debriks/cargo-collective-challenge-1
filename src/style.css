@@ -46,16 +46,6 @@ body a {
 
 /* Header-START */
 
-#header {
-  color: white;
-  font-family: var(--primary-font);
-  font-weight: var(--fs-small) !important;
-  margin-bottom: 0;
-  font-size: 65px;
-  width: 100%;
-  transition: 0.4s;
-}
-
 .fixed-header {
   position: sticky;
   top: 0;
@@ -79,6 +69,16 @@ body a {
   font-weight: var(--fs-small);
   font-size: 12px;
   line-height: 13px;
+}
+
+#header {
+  color: white;
+  font-family: var(--primary-font);
+  font-weight: var(--fs-small) !important;
+  margin-bottom: 0;
+  font-size: 65px;
+  width: 100%;
+  transition: 0.4s;
 }
 
 .header-title h1 {
@@ -137,4 +137,60 @@ body a {
   font-weight: 300;
   font-size: 12px;
   line-height: 13px;
+}
+
+/* WORK */
+
+.project-info small {
+  text-align: start;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  color: var(--color-white);
+}
+
+.project-info p {
+  bottom: 0;
+  font-size: 25px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-bottom: 150px;
+  color: var(--color-white);
+}
+
+.no-deformation {
+  width: 100%;
+  height: auto !important;
+}
+
+@media screen and (max-width: 640px) {
+  .fixed-header {
+    position: fixed;
+    top: -405px;
+    left: -15px;
+  }
+
+  .hide-for-mobile {
+    visibility: hidden;
+  }
+
+  .header-title h1 {
+    text-align: center;
+    font-size: 40px !important;
+    line-height: 40px;
+  }
+
+  .showcase {
+    position: relative;
+    top: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hide-for-mobile {
+    visibility: hidden;
+  }
 }
