@@ -49,16 +49,8 @@ body a {
 .fixed-header {
   position: sticky;
   top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   z-index: 9;
-  display: flex;
-  flex-direction: row;
-  flex-basis: content;
   padding-left: 15px;
-  overflow-y: scroll;
-  overflow-x: hidden;
   mix-blend-mode: exclusion;
 }
 
@@ -74,7 +66,7 @@ body a {
 #header {
   color: white;
   font-family: var(--primary-font);
-  font-weight: var(--fs-small) !important;
+  font-weight: var(--fs-small);
   margin-bottom: 0;
   font-size: 65px;
   width: 100%;
@@ -83,8 +75,8 @@ body a {
 
 .header-title h1 {
   font-family: var(--primary-font);
-  font-weight: var(--fs-large) !important;
-  margin-top: 0 !important;
+  font-weight: var(--fs-large);
+  margin-top: 0;
 }
 
 .header-title-text p {
@@ -169,12 +161,12 @@ body a {
 @media screen and (max-width: 640px) {
   .fixed-header {
     position: fixed;
-    top: -405px;
     left: -15px;
+    top: -115px;
   }
 
   .hide-for-mobile {
-    visibility: hidden;
+    display: none;
   }
 
   .header-title h1 {
